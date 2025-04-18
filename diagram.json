@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 10.2, "left": 28.2, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": -69.4,
+      "left": 76.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn2",
+      "top": -69.4,
+      "left": 28.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn3",
+      "top": -69.4,
+      "left": 124.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn4",
+      "top": -69.4,
+      "left": 172.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn5",
+      "top": -69.4,
+      "left": 230.4,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn6",
+      "top": 141.8,
+      "left": -105.6,
+      "attrs": { "color": "red", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn7",
+      "top": 141.8,
+      "left": -48,
+      "attrs": { "color": "blue", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn8",
+      "top": 189.8,
+      "left": -105.6,
+      "attrs": { "color": "yellow", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn9",
+      "top": 189.8,
+      "left": -48,
+      "attrs": { "color": "black", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "btn6:1.l", "uno:A0", "green", [ "h0", "v-19.2", "h105.6", "v96", "h201.6" ] ],
+    [ "btn7:1.r", "uno:A1", "green", [ "v0", "h10.4", "v86.4", "h19.2" ] ],
+    [ "btn9:2.r", "uno:A2", "green", [ "h0.8", "v29.2", "h249.6" ] ],
+    [ "btn8:2.r", "uno:A3", "green", [ "h10.4", "v38.8", "h297.6" ] ],
+    [ "btn6:2.l", "uno:GND.2", "green", [ "h-19.2", "v96.4", "h297.6" ] ],
+    [ "btn8:1.l", "uno:GND.2", "green", [ "h-9.6", "v76.8", "h278.4" ] ],
+    [ "btn7:2.l", "uno:GND.2", "green", [ "h-9.6", "v115.6", "h230.4" ] ],
+    [ "btn9:1.l", "uno:GND.2", "green", [ "h-19.2", "v96", "h249.6" ] ],
+    [ "btn5:2.r", "uno:3", "green", [ "h0" ] ],
+    [ "btn4:2.r", "uno:4", "green", [ "h10.4", "v19.6" ] ],
+    [ "btn3:2.r", "uno:5", "green", [ "h0" ] ],
+    [ "btn1:2.r", "uno:6", "green", [ "h10.4", "v10", "h76.8" ] ],
+    [ "btn2:2.r", "uno:7", "green", [ "h10.4", "v19.6", "h115.2" ] ],
+    [ "btn2:1.l", "uno:GND.1", "green", [ "h-19.2", "v57.6", "h105.6" ] ],
+    [ "btn1:1.l", "uno:GND.1", "green", [ "h-9.6", "v48", "h48" ] ],
+    [ "btn3:1.l", "uno:GND.1", "green", [ "h-9.6" ] ],
+    [ "btn4:1.l", "uno:GND.1", "green", [ "h-9.6", "v57.6", "h0", "v0", "h-38.4" ] ],
+    [ "btn5:1.l", "uno:GND.1", "green", [ "h-19.2", "v48", "h-96" ] ]
+  ],
+  "dependencies": {}
+}
